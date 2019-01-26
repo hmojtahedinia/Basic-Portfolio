@@ -6,26 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 </head>
-<body id="body-contact" background="background.png">
-            <nav class="nav">
+<body id="body-contact">
+            <nav class="navigation">
                     <a href="index.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact</a>
                     <br><br>
             </nav>
-    <div class="contact">
-        <form>
-            <h2>Contact</h2>
-            Name:<br>
-            <input type="text" name="name"><br>
-            Email:<br>
-            <input type="text" name="Email"><br>
-            Message:<br>
-            <textarea></textarea>
-
-        </form>
-    </div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">Email address:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                </div>
+              </form>
+        </div>
    
     
 </body>

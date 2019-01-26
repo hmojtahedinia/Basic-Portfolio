@@ -1,22 +1,62 @@
-.nav{
+body{
+    background-color: rgb(80, 80, 80);
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    
+}
+.navigation{
     text-align: right;
-    color: rgb(223,223,220);
+    color: white;
     font-family: sans-serif;
     font-size: 1.25em;
     word-spacing: 2em;
     margin-right: 20px;
+    
 }
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: rgb(223,223,220);
 }
 .hello{
+    border-style: dotted;
+    border-width: 10px; 
+    border-color: rgba(219, 63, 63, 0.596);
     font-family: serif;
     font-size: 5em;
     font-style: italic;
-    color: rgb(223,223,220);
+    color: white;
     margin: 2em;
     line-height: 0.25%;
+}
+#ideas{
+    margin-left: 5em;
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.container{
+    margin-top: 15%;
+    background-color:white;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.column2{
+    height: 4px;
+    width: 100%;
+    background-color: rgb(134, 134, 134);
+}
+#my-image{
+    position: relative;
+    left: -15px;
+    border-radius: 50%;
+    height: auto;
+    
+   margin: auto;
+}
+#full-stack{
+    margin: 3em;
+
 }
 #hamid{
     text-indent: 50px;
@@ -26,10 +66,11 @@ a:link, a:visited, a:hover, a:active{
     font-size: 3em;
 }
 .developer{
-    color: rgb(223,223,220);
+    color: black;
     font-family: serif;
     text-align: center;
-    
+    margin-top:200px;
+    border: solid;
 }
 #body-contact{
     background-color: rgb(223,223,220);   
@@ -55,4 +96,15 @@ textarea{
     width: 100%;
     height: 100px;
     padding: 1em;
+}
+
+.form-group{
+    color: rgb(223,223,220);
+
+}
+#exampleFormControlInput1, #exampleFormControlInput2 {
+    width: 30%;
+}
+#exampleFormControlTextarea{
+    width: 50%;
 }
