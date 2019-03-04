@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" > 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
     </script>
 </head>
 
@@ -23,16 +25,20 @@
     body {
         background: url(portfolioBackground.jpg);
     }
+
     .navbar-light {
         text-align: left;
         color: white;
         font-family: serif;
-        font-size: 1.5em;
-        background-color: rgba(219, 63, 63, 0.8);
+        font-size: 1em;
+        background-color: rgba(219, 63, 63, 0.856);
+        color: aliceblue;
         width: 25%;
         text-decoration: none;
         font-weight: bold;
-        margin: 10px;
+        position: fixed;
+        top: 10px;
+        left: 0px;
     }
 
     a:link,
@@ -59,7 +65,11 @@
         text-align: center;
     }
 
-    #wordGamePic {
+    #wordGamePic,
+    #triviaGamePic,
+    #gifTasticPic,
+    #crystalGamePic,
+    #trainSchedulePic {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -68,45 +78,29 @@
         margin-top: 50px;
         border: 3px solid black;
         padding: 3px;
-        
-        
+
+
     }
 
-    #crystalGamePic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 100px;
-        width: 100px;
-        margin-top: 50px;
-        border: 3px solid black;
-        padding: 3px;
-        
+
+
+    #crystalGamePic:hover,
+    #triviaGamePic:hover,
+    #wordGamePic:hover,
+    #gifTasticPic:hover,
+    #trainSchedulePic:hover {
+        box-shadow: 0px 0px 10px 3px rgba(62, 223, 30, 0.8);
     }
 
-    #crystalGamePic:hover, #triviaGamePic:hover, #wordGamePic:hover {
-        box-shadow:  0px 0px 10px 3px rgba(62, 223, 30, 0.8);
-    }
-
-    #wordGameTitle, #triviaGameTitle, #crystalGameTitle  {
+    #wordGameTitle,
+    #triviaGameTitle,
+    #crystalGameTitle,
+    #gifTasticTitle,
+    #trainScheduleTitle {
         color: black;
         font-size: 1.5em;
         font-family: sans-serif;
     }
-
-    #triviaGamePic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 100px;
-        width: 100px;
-        margin-top: 50px;
-        border: 3px solid black;
-        padding: 3px;
-
-    }
-
-
 </style>
 
 <body>
@@ -124,22 +118,32 @@
     </div>
 
     <div class="container">
-            <div class="row">
-              <div class="col">
-                <a href="https://hmojtahedinia.github.io/wordGame/"><img src="wordGame.jpg" id="wordGamePic"><span id="wordGameTitle">Word Game</span></a>  
-              </div>
-              <div class="col">
-                <a href="https://hmojtahedinia.github.io/crystalCollectorGame/"><img src="crystalGame.jpg" id="crystalGamePic"><span id="crystalGameTitle">Crystal Game</span></a>  
-                </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://hmojtahedinia.github.io/wordGame/"><img src="wordGame.jpg" id="wordGamePic"><span
+                        id="wordGameTitle">Word Game</span></a>
             </div>
-            <div class="row">
-              <div class="col">
-                <a href="https://hmojtahedinia.github.io/triviaGame/"><img src="triviaGamePic.jpg" id="triviaGamePic"><span id="triviaGameTitle">Trivia Game</span></a>
-              </div>
-              <div class="col">
-                2 of 2
-              </div>
-          </div>
+            <div class="col">
+                <a href="https://hmojtahedinia.github.io/crystalCollectorGame/"><img src="crystalGame.jpg"
+                        id="crystalGamePic"><span id="crystalGameTitle">Crystal Game</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://hmojtahedinia.github.io/triviaGame/"><img src="triviaGamePic.jpg"
+                        id="triviaGamePic"><span id="triviaGameTitle">Trivia Game</span></a>
+            </div>
+            <div class="col">
+                <a href="https://hmojtahedinia.github.io/gifTastic/"><img src="giftastic1.jpg" id="gifTasticPic"><span
+                        id="gifTasticTitle">Gif Tastic</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="https://hmojtahedinia.github.io/trainScheduler/"><img src="trainSchedule.jpg"
+                        id="trainSchedulePic"><span id="trainScheduleTitle">Train Scheduler</span></a>
+            </div>
+        </div>
 
 
 </body>
