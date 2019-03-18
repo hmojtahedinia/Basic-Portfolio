@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" > 
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
+  </script>
 
 
 
-  </head>
+</head>
+
 <body>
-    
-        <nav class="navbar navbar-light" id="navbar" >
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-        </nav>
-
-        <script>
-        // When the user scrolls the page, execute myFunction 
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-        </script>
+  <div>
+    <nav class="navbar navbar-light" id="navbar">
+      <a href="index.html">About</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="contact.html">Contact</a> 
+    </nav>
+  </div>
+  <div class="container">
+    <p id="weather">Toronto</p>
+  </div>
 
 
 
-        <div class="container hello">
-                <div class="row">
-                  <div class="col">
-                        <p>Hello!</p>
-                        <p id="hamid">This is <span id="hamid1">Hamid</span></p>
-                  </div>
-                </div>
-        </div>
-        
+  <script>
+
+  </script>
 
 
 
+  <div class="container hello">
+    <div class="row">
+      <div class="col" id="hamid">
+        <p id="hello1">Hello!</p>
+        <p><span id="thisIs">This is</span> <span id="hamid1">Hamid</span></p>
+      </div>
+    </div>
+      </div>
 
 
 
+  <div>
+    <p id="ideas">Get ready to turn Ideas into Reality</p>
+  </div>
 
-<div>
-<p id="ideas">Get ready to turn Ideas into Reality</p>
-</div>
-
-<div class="container secondContainer">
+  <div class="container secondContainer">
     <div class="row">
       <div class="col"><img src="myPhoto.png" alt="My photo" id="my-image"></div>
       <div class="col" id="full-stack">
-          I am a full stack developer with a passion for thoutful design, and teaching.<br>
-          As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.</div>
+        I am a full stack developer with a passion for thoutful design, and teaching.<br>
+        As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and
+        my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a
+        high growth company.</div>
       <div class="w-100"></div>
       <div class="column2"></div>
       <div class="column2"></div>
     </div>
-</div>
+  </div>
 
 
+  <div class="developer">
+    <p>&copy; Ganimed Consulting | Toronto | Phone: (647) 224-2278</p>
+  </div>
+
+  <script src="javascript.js"></script>
 
 
-
-<div class="developer">  
-    <p>Full Stack Web Developer</p>
-    <p>Copyright&copy;</p>
-</div>  
-    
 </body>
+
 </html>

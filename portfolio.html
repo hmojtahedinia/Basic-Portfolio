@@ -24,21 +24,37 @@
 <style>
     body {
         background: url(portfolioBackground.jpg);
+        background-attachment: fixed;
+
+    }
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 7px 14px;
+        text-decoration: none;
+    }
+
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    #navbar a.active {
+        background-color: #4CAF50;
+        color: white;
     }
 
     .navbar-light {
         text-align: left;
         color: white;
         font-family: serif;
-        font-size: 1em;
-        background-color: rgba(219, 63, 63, 0.856);
-        color: aliceblue;
-        width: 25%;
+        background-color: rgba(219, 63, 63, 0.301);
+        width: 33%;
         text-decoration: none;
         font-weight: bold;
-        position: fixed;
-        top: 10px;
-        left: 0px;
     }
 
     a:link,
@@ -54,7 +70,7 @@
     }
 
     #portfolioTitle {
-        background-color: red;
+        background-color: rgba(21, 255, 0, 0.50);
         height: 1em;
         text-align: center;
         font-size: 5em;
@@ -101,15 +117,29 @@
         font-size: 1.5em;
         font-family: sans-serif;
     }
+    .developer{
+    color: white;
+    font-family: serif;
+    text-align: center;
+    margin: auto;
+    margin-top:200px;
+    padding: 8px;
+    background-color:  rgba(134, 134, 134, 0.5);
+    display: flex;
+    justify-content: center;
+    
+}
 </style>
 
 <body>
 
-    <nav class="navbar navbar-light" id="navbar">
-        <a href="https://hmojtahedinia.github.io/Basic-Portfolio/">About</a>
-        <a href="https://hmojtahedinia.github.io/Basic-Portfolio/portfolio.html">Portfolio</a>
-        <a href="https://hmojtahedinia.github.io/Basic-Portfolio/contact.html">Contact</a>
-    </nav>
+    <div>
+        <nav class="navbar navbar-light" id="navbar">
+            <a href="index.html">About</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 
     <div>
         <p id="portfolioTitle">
@@ -144,7 +174,9 @@
                         id="trainSchedulePic"><span id="trainScheduleTitle">Train Scheduler</span></a>
             </div>
         </div>
-
+        <div class="developer">
+            <p>&copy; Ganimed Consulting | Toronto | Phone: (647) 224-2278</p>
+        </div>
 
 </body>
 
