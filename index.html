@@ -35,29 +35,28 @@
 
 
 
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Interested in working together?</h5><br>
-            <div id="navbarFixedPosition" class=''>
-              <nav class="navbar navbar-light" id="navbar">
-                  <a href="#aboutMe"><i class="material-icons" style="font-size:30px">person</i>About</a>
-                  <a href="#portfolioTitle"><i class="material-icons"
-                        style="font-size:30px">folder_shared</i>Portfolio</a>
-                  <a href="#contactDiv"><i class="material-icons" style="font-size:30px">email</i>Contact</a>
+  <div class="pos-f-t" id="stickyNav">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Interested in working together?</h5><br>
+        <div id="navbarFixedPosition" class=''>
+          <nav class="navbar navbar-light" id="navbar">
+            <a href="#aboutMe"><i class="material-icons" style="font-size:30px">person</i>About</a>
+            <a href="#portfolioTitle"><i class="material-icons" style="font-size:30px">folder_shared</i>Portfolio</a>
+            <a href="#contactDiv"><i class="material-icons" style="font-size:30px">email</i>Contact</a>
 
-              </nav>
-            </div>
-            <span class="text-muted">Let's have a talk</span>
-          </div>
+          </nav>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
+        <span class="text-muted">Let's have a talk</span>
       </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
 
 
 
@@ -166,30 +165,52 @@
             id="gifTasticPic"><span id="gifTasticTitle">Gif Tastic</span></a>
       </div>
     </div>
+  </div>
 
-    <div>
-      <h2 id="contactDiv">Contact</h2>
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name:</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+  <div class="container" id="test">
+    <div id="contactDivMain">
+
+        <h2 id="contactDiv"><img src="./assets/images/mailPic.png" id="mailPic"></a> Contact</h2>
+
+        <div class="envelope">
+          <input class="envelope__check" type="checkbox" />
+          <div class="envelope__flap envelope__flap--inside"></div>
+          <div class="envelope__flap"></div>
+          <div class="envelope__letter">
+            <div class="letter">
+              <div class="letter__content">
+                <p>Hey! 👋</p>
+                <p>Are interested?<br><br>
+                  Reach out to me
+                </p>
+              </div>
+              <div class="letter__content"></div>
+              <div class="letter__content">
+                <p> blue_ganimed@yahoo.com <br>
+                  (647)224 2278 ☕️</p><span class="sign-off">Hamid</span>
+              </div>
+            </div>
+          </div>
+          <div class="envelope__back"></div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput2">Email address:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
-        </div>
-        <button type="submit" id="submitButton">Submit</button>
-      </form>
     </div>
   </div>
 
   <div class="developer">
     <p>&copy; Ganimed Consulting | Toronto | Phone: (647) 224-2278</p>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script src="javascript.js"></script>
 
