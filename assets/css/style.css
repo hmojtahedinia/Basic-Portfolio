@@ -1,7 +1,9 @@
 body{
-    background-image: url("background.png");
-    background-repeat: no-repeat;
+    background-image: url("../images/bg1.jpg");
+    background-repeat: repeat;
     background-attachment: fixed; 
+    padding-left: 2%;
+    padding-right: 2%;
 }
 #weather{
     color: white;
@@ -9,53 +11,36 @@ body{
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 10%;
     background-color: rgba(14, 14, 136, 0.5);
 }
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 7px 14px;
-    text-decoration: none;
-  }
-  
+#navbar{
+    padding: 1%;
+    border-radius: 50%;
+}
   #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgba(44, 46, 172, 0.301);
+    color:  rgba(225, 225, 238, 1);
+    text-decoration: none;
+    border-radius: 50%;
+    
   }
   
   #navbar a.active {
     background-color: #4CAF50;
     color: white;
+    padding: 1%;
   }
   
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
-
-
-
-
-
 .navbar-light{
     text-align: left;
     color: white;
-    font-family: serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgba(219, 63, 63, 0.301);
     width: 33%;
     text-decoration: none;
     font-weight: bold;
+    padding: 1%;
 }
 
 a:link, a:visited, a:hover, a:active{
@@ -70,9 +55,12 @@ a.highlight:hover{
     margin-top: 15%;
     background-color:rgba(255, 255, 255, 0.75);
     border-style: solid;
-    border-width: 10px;
+    border-width: 5px;
+    border-radius: 25%;
+    border-color: aquamarine;
 }
 .hello{
+    position: relative;
     border-style: dotted;
     border-width: 10px; 
     border-color: rgba(219, 63, 63, 0.596);
@@ -130,11 +118,11 @@ a.highlight:hover{
     left: -15px;
     border-radius: 50%;
     height: auto;
-    
-   margin: auto;
+    margin: auto;
 }
 #full-stack{
     margin: 3em;
+    text-align: justify;
 
 }
 #hamid{
@@ -144,18 +132,7 @@ a.highlight:hover{
     font-weight: bold;
     font-size: 150%;
 }
-.developer{
-    color: white;
-    font-family: serif;
-    text-align: center;
-    margin: auto;
-    margin-top:200px;
-    padding: 8px;
-    background-color:  rgba(134, 134, 134, 0.253);
-    display: flex;
-    justify-content: center;
-    
-}
+
 #body-contact{
     background-color: rgb(223,223,220);   
 }
@@ -195,3 +172,104 @@ textarea{
 #contactInfo{
     color: white;
 }
+
+
+
+#portfolioTitle {
+    background-color: rgba(21, 255, 0, 0.25);
+    height: 1em;
+    text-align: center;
+    font-size: 5em;
+    padding: 10px;
+    margin-top: 3em;
+    color: rgba(167, 228, 207, 0.705);
+}
+
+.row {
+    text-align: center;
+}
+
+#wordGamePic,
+#triviaGamePic,
+#gifTasticPic,
+#crystalGamePic,
+#trainSchedulePic,
+#bamazonPic,
+#eatDaBurgerPic,
+#friendFinderPic,
+#timeToGoPic,
+#liriBotPic,
+#movieShufflePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    border: 3px solid white;
+    padding: 3px;
+
+
+}
+
+
+
+#crystalGamePic:hover,
+#triviaGamePic:hover,
+#wordGamePic:hover,
+#gifTasticPic:hover,
+#trainSchedulePic:hover,
+#bamazonPic:hover,
+#eatDaBurgerPic:hover,
+#friendFinderPic:hover,
+#timeToGoPic:hover,
+#liriBotPic:hover,
+#movieShufflePic:hover{
+    box-shadow: 0px 0px 10px 3px rgba(62, 223, 30, 0.8);
+}
+
+#wordGameTitle,
+#triviaGameTitle,
+#crystalGameTitle,
+#gifTasticTitle,
+#trainScheduleTitle,
+#bamazonTitle,
+#eatDaBurgerTitle,
+#friendFinderTitle,
+#timeToGoTitle,
+#liriBotTitle,
+#movieShuffleTitle {
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.developer{
+color: white;
+font-family: serif;
+text-align: center;
+margin-top:200px;
+margin-bottom: 1em;
+padding: 8px;
+border-radius: 10px;
+background-color:  rgba(134, 134, 134, 0.25);
+display: flex;
+justify-content: center;
+}
+#contactDiv{
+    color: white;
+    margin-top: 15%;
+    border: 5px solid;
+    width: 30%;
+    align-content: center;
+    padding: 3%;
+    border-bottom-right-radius:  50%;
+    background-color:  rgba(158, 54, 144, 0.473)
+}
+
+
+
+
+
+
+
+
