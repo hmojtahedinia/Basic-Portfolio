@@ -28,18 +28,17 @@
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 </head>
 
 <body>
 
-
-
-
   <div class="pos-f-t" id="stickyNav">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4">
-        <h5 class="text-white h4">Interested in working together?</h5><br>
-        <div id="navbarFixedPosition" class=''>
+        <h5 class="text-white h4">Interested in working together?</h5>
+        <div id="navbarFixedPosition">
           <nav class="navbar navbar-light" id="navbar">
             <a href="#aboutMe"><i class="material-icons" style="font-size:30px">person</i>About</a>
             <a href="#portfolioTitle"><i class="material-icons" style="font-size:30px">folder_shared</i>Portfolio</a>
@@ -59,6 +58,7 @@
   </div>
 
 
+  <span id="typed"></span>
 
 
 
@@ -83,19 +83,27 @@
 
   <div class="container secondContainer" id="aboutMe">
     <div class="row">
-      <div class="col"><img src="./assets/images/myPhoto.png" alt="My photo" id="my-image"></div>
-      <div class="col" id="full-stack">
-        I am a full stack developer with a passion for thoutful design, and teaching.<br>
+      <div class="col"><img src="./assets/images/myPhoto.png" alt="My photo" id="myImage"></div>
+      <div class="col" >
+        <div id="text">
+            <span id="full-stack"></span>
+
+        </div>
+        <!-- am a full stack developer with a passion for thoutful design, and teaching.
         As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and
         my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a
-        high growth company.</div>
-
+        high growth company. -->
+      </div>
     </div>
   </div>
+<div id="test2"> 
+    <span id="test"></span>
+
+</div>
 
   <div>
     <p id="portfolioTitle">
-      Portofilo
+      Portfolio
     </p>
   </div>
 
@@ -170,29 +178,29 @@
   <div class="container" id="test">
     <div id="contactDivMain">
 
-        <h2 id="contactDiv">Contact   <img src="./assets/images/mailPic.png" id="mailPic"></h2>
+      <h2 id="contactDiv">Contact <img src="./assets/images/mailPic.png" id="mailPic"></h2>
 
-        <div class="envelope">
-          <input class="envelope__check" type="checkbox" />
-          <div class="envelope__flap envelope__flap--inside"></div>
-          <div class="envelope__flap"></div>
-          <div class="envelope__letter">
-            <div class="letter">
-              <div class="letter__content">
-                <p>Hey! 👋</p>
-                <p>Are interested?<br><br>
-                  Reach out to me
-                </p>
-              </div>
-              <div class="letter__content"></div>
-              <div class="letter__content">
-                <p> blue_ganimed@yahoo.com <br>
-                  (647)224 2278 ☕️</p><span class="sign-off">Hamid</span>
-              </div>
+      <div class="envelope">
+        <input class="envelope__check" type="checkbox" />
+        <div class="envelope__flap envelope__flap--inside"></div>
+        <div class="envelope__flap"></div>
+        <div class="envelope__letter">
+          <div class="letter">
+            <div class="letter__content">
+              <p>Hey! 👋</p>
+              <p>Are interested?<br><br>
+                Reach out to me
+              </p>
+            </div>
+            <div class="letter__content"></div>
+            <div class="letter__content">
+              <p> blue_ganimed@yahoo.com <br>
+                (647)224 2278 ☕️</p><span class="sign-off">Hamid</span>
             </div>
           </div>
-          <div class="envelope__back"></div>
         </div>
+        <div class="envelope__back"></div>
+      </div>
     </div>
   </div>
 

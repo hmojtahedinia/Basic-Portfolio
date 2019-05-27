@@ -16,12 +16,10 @@ body{
     z-index: +1;
 }
 #stickyNav{
-    position: -webkit-sticky;
-    position: sticky;
+    width:33%;
     top: 0;
     padding: 5px;
-    z-index: +1;
-    
+    z-index: +1; 
 }
 #navbar{
     padding: 1%;
@@ -58,6 +56,16 @@ a:link, a:visited, a:hover, a:active{
 a.highlight:hover{
     color: bisque;
 }
+#typed{
+    background-color: #00790a77;
+    color: #eee;
+    font-size: 2em;
+    padding: 5px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 100%;
+}
 
 .secondContainer{
     margin-top: 15%;
@@ -85,6 +93,12 @@ a.highlight:hover{
 
 }
 @media (max-width: 415px) {
+    #stickyNav{
+        width:100%;
+        top: 0;
+        padding: 5px;
+        z-index: +1; 
+    }
     .hello{
         border-style: dotted;
         border-width: 10px; 
@@ -105,6 +119,16 @@ a.highlight:hover{
         text-decoration: none;
         font-weight: bold;
     }
+    #typed{
+        background-color: #00790a77;
+        color: #eee;
+        font-size: 1em;
+        padding: 5px;
+        position: relative;
+        margin: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 100%;
+    }
 }
 #ideas{
     margin-left: 25%;
@@ -122,20 +146,22 @@ a.highlight:hover{
     width: 100%;
     background-color: rgb(134, 134, 134);
 }
-#my-image{
+#myImage{
     position: relative;
     left: -15px;
+    border: solid white 5px; 
     border-radius: 50%;
     height: auto;
     margin: auto;
 }
-#full-stack{
+#text{
     margin: 10%;
-    text-align: justify;
+    text-align: left;
     padding: 2%;
     background-color: #34b6d617;
-    border: solid white;
-
+}
+#test2{
+    width:100px;
 }
 #hamid{
     text-indent: 100px;
