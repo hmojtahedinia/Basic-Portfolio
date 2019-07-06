@@ -1,227 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfoli</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Portfolio</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- Font Googleapis -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  </head>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <!-- Font Googleapis -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- typed.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-</head>
+  <body>
+    <div id="background"></div>
+    <div class="container">
+      <p id="weather">Toronto</p>
+    </div>
 
-<body>
+    <header class="container">
+      <nav class="">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#weather">Home</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="brand">
+        <div id="hamid">Ha<span>m</span>id</div>
+      </div>
+      <div>
+        <p id="ideas">Get ready to turn Ideas into Reality</p>
+      </div>
+    </header>
 
-  <div class="pos-f-t" id="stickyNav">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4">Interested in working together?</h5>
-        <div id="navbarFixedPosition">
-          <nav class="navbar navbar-light" id="navbar">
-            <a href="#aboutMe"><i class="material-icons" style="font-size:30px">person</i>About</a>
-            <a href="#portfolioTitle"><i class="material-icons" style="font-size:30px">folder_shared</i>Portfolio</a>
-            <a href="#contactDiv"><i class="material-icons" style="font-size:30px">email</i>Contact</a>
+    <div class="container" id="typed"></div>
 
-          </nav>
+    <div class="container">
+      <div class="title" id="about">
+        About
+      </div>
+    </div>
+
+    <div class="container" id="myImageDiv">
+      <img src="./assets/images/10.jpg" alt="My photo" id="myImage" />
+    </div>
+
+    <div class="container secondContainer" id="aboutMe">
+      <div class="text">
+        <span id="full-stack">
+          I am a full stack web developer... <br />
+          with a passion for thoutful design,and teaching. As a web developer, I
+          enjoy using my obsessive attention to detail. my unequivocal love for
+          making things, and my mission- driven work ethic to literally change
+          the world. <br />
+          That's why I’m excited to make a big impact at a high growth company.
+        </span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="title" id="portfolio">
+        Portfolio
+      </div>
+    </div>
+
+    <div class="container aaa">
+      <a href="https://hmojtahedinia.github.io/Clicky-Game/">
+        <img
+          src="https://thumbs.gfycat.com/FeminineInsignificantAmericanwarmblood-size_restricted.gif"
+          id="imageMortalKombat"
+        />
+
+        <div class="overlay1">
+          <!-- <a href="#"> -->
+          <div class="text1">Mortal Kombat</div>
+          <!-- </a> -->
         </div>
-        <span class="text-muted">Let's have a talk</span>
-      </div>
+      </a>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-  </div>
-
-
-  <span id="typed"></span>
-
-
-
-
-  <div class="container">
-    <p id="weather">Toronto</p>
-  </div>
-
-
-  <div class="container hello">
-    <div class="row">
-      <div class="col" id="hamid">
-        <p id="hello1">Hello!</p>
-        <p><span id="thisIs">This is</span> <span id="hamid1">Hamid</span></p>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <p id="ideas">Get ready to turn Ideas into Reality</p>
-  </div>
-
-  <div class="container secondContainer" id="aboutMe">
-    <div class="row">
-      <div class="col"><img src="./assets/images/myPhoto.png" alt="My photo" id="myImage"></div>
-      <div class="col" >
-        <div id="text">
-            <span id="full-stack"></span>
-
-        </div>
-        <!-- am a full stack developer with a passion for thoutful design, and teaching.
-        As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and
-        my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a
-        high growth company. -->
-      </div>
-    </div>
-  </div>
-<div id="test2"> 
-    <span id="test"></span>
-
-</div>
-
-  <div>
-    <p id="portfolioTitle">
-      Portfolio
-    </p>
-  </div>
-
-  <div class="container">
-
-    <div class="row">
-      <div class="col">
-        <a href="https://hmojtahedinia.github.io/trainScheduler/"><img src="./assets/images/trainSchedule.jpg"
-            id="trainSchedulePic"><span id="trainScheduleTitle">Train Scheduler</span></a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/hmojtahedinia/bamazon"><img src="./assets/images/bamazon.jpg" id="bamazonPic"><span
-            id="bamazonTitle">Bamazon</span></a>
+    <div class="container" id="mortalKombatText">
+      <div class="text">
+        <img id="mern" src="./assets/images/mern.jpg" />
+        <img id="java" src="./assets/images/java.jpg" />
+        <img id="bootstrap" src="./assets/images/bootstrap.png" />
+        <img id="mysql" src="./assets/images/mysql.jpg" />
+        <img id="firebase" src="./assets/images/Firebase.png" />
+        <img id="github" src="./assets/images/github.png" />
+        <img id="gitlab" src="./assets/images/gitlab.png" />
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <a href="https://murmuring-hamlet-38071.herokuapp.com/"><img src="./assets/images/burgerPic.jpg"
-            id="eatDaBurgerPic"><span id="eatDaBurgerTitle">Eat Da Burger</span></a>
-      </div>
-      <div class="col">
-        <a href="https://warm-dusk-11359.herokuapp.com/"><img src="./assets/images/friendFinder.jpg"
-            id="friendFinderPic"><span id="friendFinderTitle">Friend Finder</span></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <a href="https://limitless-retreat-50315.herokuapp.com/"><img src="./assets/images/timeToGo.jpg"
-            id="timeToGoPic"><span id="timeToGoTitle">Time to Go</span></a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/hmojtahedinia/liriBot"><img src="./assets/images/liriBot.jpg" id="liriBotPic"><span
-            id="liriBotTitle">LiriBot</span></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <a href="https://limitless-retreat-50315.herokuapp.com/"><img src="./assets/images/timeToGo.jpg"
-            id="timeToGoPic"><span id="timeToGoTitle">Time to Go</span></a>
-      </div>
-      <div class="col">
-        <a href="https://legendarybrij.github.io/topcreators/index.html"><img src="./assets/images/movieShuffle.jpg"
-            id="movieShufflePic"><span id="movieShuffleTitle">Movie Shuffle</span></a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <a href="https://hmojtahedinia.github.io/wordGame/"><img src="./assets/images/wordGame.jpg"
-            id="wordGamePic"><span id="wordGameTitle">Word Game</span></a>
-      </div>
-      <div class="col">
-        <a href="https://hmojtahedinia.github.io/crystalCollectorGame/"><img src="./assets/images/crystalGame.jpg"
-            id="crystalGamePic"><span id="crystalGameTitle">Crystal Game</span></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a href="https://hmojtahedinia.github.io/triviaGame/"><img src="./assets/images/triviaGamePic.jpg"
-            id="triviaGamePic"><span id="triviaGameTitle">Trivia Game</span></a>
-      </div>
-      <div class="col">
-        <a href="https://hmojtahedinia.github.io/gifTastic/"><img src="./assets/images/giftastic1.jpg"
-            id="gifTasticPic"><span id="gifTasticTitle">Gif Tastic</span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" id="test">
-    <div id="contactDivMain">
-
-      <h2 id="contactDiv">Contact <img src="./assets/images/mailPic.png" id="mailPic"></h2>
-
-      <div class="envelope">
-        <input class="envelope__check" type="checkbox" />
-        <div class="envelope__flap envelope__flap--inside"></div>
-        <div class="envelope__flap"></div>
-        <div class="envelope__letter">
-          <div class="letter">
-            <div class="letter__content">
-              <p>Hey! 👋</p>
-              <p>Are interested?<br><br>
-                Reach out to me
-              </p>
-            </div>
-            <div class="letter__content"></div>
-            <div class="letter__content">
-              <p> blue_ganimed@yahoo.com <br>
-                (647)224 2278 ☕️</p><span class="sign-off">Hamid</span>
-            </div>
+    <div class="container">
+      <div id="contactDivMain">
+        <div class="container">
+          <div class="title" id="contact">
+            Contact
           </div>
         </div>
-        <div class="envelope__back"></div>
+
+        <div class="envelope">
+          <input class="envelope__check" type="checkbox" />
+          <div class="envelope__flap envelope__flap--inside"></div>
+          <div class="envelope__flap"></div>
+          <div class="envelope__letter">
+            <div class="letter">
+              <div class="letter__content">
+                <p class="letterFont">Hey! 👋</p>
+                <p class="letterFont">
+                  Are interested?<br /><br />
+                  Reach out to me
+                </p>
+              </div>
+              <div class="letter__content"></div>
+              <div class="letter__content">
+                <p class="letterFont">
+                  h.mojtahedinia@gmail.com <br />
+                  (647)224 2278 ☕️
+                </p>
+                <span class="sign-off letterFont">Hamid</span>
+              </div>
+            </div>
+          </div>
+          <div class="envelope__back"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="developer">
-    <p>&copy; Ganimed Consulting | Toronto | Phone: (647) 224-2278</p>
-  </div>
+    <div class="developer">
+      <p>
+        &copy; Ganimed Consulting. All rights reserved. | Toronto CA |
+        <a href="https://github.com/hmojtahedinia"
+          ><img class="logos" src="./assets/images/githubSmall.png"/></a
+        ><a href="https://www.linkedin.com/in/hamid-mojtahedinia-28b2955a/"
+          ><img class="logos" src="./assets/images/linkedinSmall.png"
+        /></a>
+      </p>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="javascript.js"></script>
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
