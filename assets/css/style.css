@@ -553,3 +553,6 @@ nav ul li a:hover::after {
 .logos {
   max-height: 25px;
 }
+#mortalKombatText {
+  margin-top: 50px;
+}
