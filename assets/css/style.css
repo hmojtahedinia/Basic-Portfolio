@@ -204,10 +204,13 @@ nav ul li a:hover::after {
   margin: auto;
   margin-bottom: 50px;
   color: rgb(3, 0, 48);
+  background-color: white;
   font-size: 1.5em;
   width: 360px;
+  border-radius: 15px;
   box-shadow: 10px 10px 5px grey;
 }
+
 .title {
   font-size: 3em;
   font-family: "Orbitron", "sans-serif" !important;
@@ -254,17 +257,19 @@ nav ul li a:hover::after {
   clip-path: circle(125px at center);
 } */
 
-.aaa {
+.portfolioItems {
   position: relative;
-  width: 100%;
   clip-path: circle(125px at center);
   margin-top: 50px;
   font-family: "Orbitron", "sans-serif" !important;
 }
 
-#imageMortalKombat {
+#imageMortalKombat,
+#imageGoogleBookSearch,
+#imageTimeToGo,
+#imageTheStylist {
   display: block;
-  width: 50%;
+  max-height: 300px;
   height: auto;
   margin: auto;
   clip-path: circle(125px at center);
@@ -284,10 +289,10 @@ nav ul li a:hover::after {
   clip-path: circle(125px at center);
 }
 
-.aaa:hover .overlay1 {
+.portfolioItems:hover .overlay1 {
   bottom: 0;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 
 .text1 {
@@ -553,6 +558,26 @@ nav ul li a:hover::after {
 .logos {
   max-height: 25px;
 }
-#mortalKombatText {
+
+.portfolioBox {
+  background-color: #3cda3717;
+  display: block;
+  margin: auto;
+  height: 550px;
+  width: 500px !important;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px grey;
+}
+#skillsBox {
+  border: #423b3b2d solid;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  width: 360px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px grey;
 }
