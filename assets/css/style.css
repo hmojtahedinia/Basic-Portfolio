@@ -24,16 +24,17 @@ header {
   overflow: hidden;
 }
 #background {
-  background-image: url("../images/slow.jpg");
-  position: absolute;
+  /* background-image: url("https://media0.giphy.com/media/x5azV4puF08Ew/giphy.gif"); */
+  background: url("../images/night.gif");
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0.85;
   z-index: -1;
 }
 /* .container {
@@ -319,7 +320,7 @@ nav ul li a:hover::after {
 }
 
 .developer {
-  color: crimson;
+  color: rgb(255, 255, 255);
   font-family: serif;
   text-align: center;
   margin-top: 200px;
@@ -559,7 +560,7 @@ nav ul li a:hover::after {
 }
 
 .portfolioBox {
-  background-color: #3cda3717;
+  background-color: #37da456e;
   display: block;
   margin: auto;
   height: 550px;
