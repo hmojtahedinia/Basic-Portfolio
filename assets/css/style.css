@@ -4,16 +4,27 @@ html {
 a {
   text-decoration: none !important;
   color: rgb(255, 255, 255) !important;
+  overflow: auto;
 }
 
 body {
-  width: 100%;
+  margin: auto !important;
+
+  background-image: url("../images/night.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* .container {
-  width: auto;
-  margin: auto;
-} */
+#background {
+  background-color: rgba(94, 97, 247, 0.5);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
 
 header {
   width: 100% !important;
@@ -23,25 +34,7 @@ header {
   left: 0px;
   overflow: hidden;
 }
-#background {
-  /* background-image: url("https://media0.giphy.com/media/x5azV4puF08Ew/giphy.gif"); */
-  background: url("../images/night.gif");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  opacity: 0.85;
-  z-index: -1;
-}
-/* .container {
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
-} */
+
 nav {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -169,7 +162,7 @@ nav ul li a:hover::after {
 
 #typed {
   /* background-color: rgb(57, 110, 7); */
-  color: rgb(3, 0, 48);
+  color: rgb(255, 255, 255);
   text-align: center;
   /* width: auto; */
   height: 60px;
@@ -206,7 +199,8 @@ nav ul li a:hover::after {
   color: rgb(3, 0, 48);
   background-color: white;
   font-size: 1.5em;
-  width: 360px;
+  width: 250px;
+  overflow: auto;
   border-radius: 15px;
   box-shadow: 10px 10px 5px grey;
 }
@@ -216,6 +210,7 @@ nav ul li a:hover::after {
   font-family: "Orbitron", "sans-serif" !important;
   text-align: center;
   background-color: rgba(0, 0, 255, 0.342);
+  color: white;
   margin: auto;
   margin-top: 100px;
   border-radius: 50%;
@@ -240,39 +235,33 @@ nav ul li a:hover::after {
   -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
-/* #imageMortalKombatDiv {
-  display: block;
-  width: 50%;
-  margin: auto;
-  margin-top: 100px;
-  opacity: 0.8;
-  box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
-  background-color: brown;
-} */
-/* #imageMortalKombat {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  clip-path: circle(125px at center);
-} */
 
 .portfolioItems {
   position: relative;
-  clip-path: circle(125px at center);
+  /* clip-path: circle(150px at center); */
   margin-top: 50px;
+  padding-top: 10px;
   font-family: "Orbitron", "sans-serif" !important;
+  /* overflow: auto; */
 }
 
 #imageMortalKombat,
-#imageGoogleBookSearch,
 #imageTimeToGo,
 #imageTheStylist {
   display: block;
-  max-height: 300px;
   height: auto;
   margin: auto;
-  clip-path: circle(125px at center);
+  max-height: 200px;
+  clip-path: circle(95px at center);
+  margin-bottom: 20px;
+}
+#imageGoogleBookSearch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  clip-path: circle(95px at center);
+  margin-bottom: 20px;
 }
 
 .overlay1 {
@@ -286,7 +275,7 @@ nav ul li a:hover::after {
   margin: auto;
   height: 0;
   transition: 0.5s ease;
-  clip-path: circle(125px at center);
+  clip-path: circle(100px at center);
 }
 
 .portfolioItems:hover .overlay1 {
@@ -298,7 +287,7 @@ nav ul li a:hover::after {
 .text1 {
   white-space: nowrap;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -560,13 +549,15 @@ nav ul li a:hover::after {
 }
 
 .portfolioBox {
-  background-color: #37da456e;
+  background-color: #01160162;
   display: block;
   margin: auto;
-  height: 550px;
-  width: 500px !important;
+  margin-bottom: 5px;
+  height: auto;
+  width: 300px !important;
   border-radius: 20px;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px rgba(39, 39, 39, 0.664);
+  padding-bottom: 3px;
 }
 #skillsBox {
   border: #423b3b2d solid;
@@ -577,7 +568,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: white;
-  width: 360px;
+  width: 300px;
   border-radius: 15px;
   box-shadow: 10px 10px 5px grey;
 }
